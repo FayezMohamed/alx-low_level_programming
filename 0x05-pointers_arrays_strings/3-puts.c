@@ -3,10 +3,8 @@
  * _puts - prints a string to stout
  * @str: string
  */
-void _puts(char *str)
+void _puts(char *s)
 {
-	int i = 0;
-
 	while (*str != '\0')
 	{
 		_putchar(*str++);
