@@ -3,7 +3,7 @@
  * puts2 - prints every charater in a string
  * @str: string
  */
-void puts_half(char *str)
+void puts2(char *str)
 {
 	int i;
 	int j;
