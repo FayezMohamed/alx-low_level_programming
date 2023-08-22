@@ -7,9 +7,9 @@
 void print_array(int *a, int n)
 {
 	int i;
-	int n;
 	int *y = a;
-
+	
+	n = 0;
 	while (*y != '\0')
 	{
 		n++;
