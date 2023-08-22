@@ -25,12 +25,12 @@ void puts_half(char *str)
 		{
 			_putchar(str[i]);
 		}
+	}
 	else
 	{
 		for (i = n; i < length; i++)
 		{
 			_putchar(str[i]);
 		}
-	}
 	}
 }
