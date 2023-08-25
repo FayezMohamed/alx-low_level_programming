@@ -16,18 +16,18 @@ char *_strcat(char *dest, char *src)
 	while (*dest < '\0')
 	{
 		i++;
-		*dest++;
+		dest++;
 	}
 
 	while (*src < '\0')
 	{
 		j++;
-		*src++;
+		src++;
 	}
 	k = j + i;
 	for (n = i + 1; n <= k; n++)
 	{
-		*dest[n];
+		dest[n];
 	}
-	return(*result);
+	return (*result);
 }
