@@ -23,12 +23,12 @@ int is_prime_number(int n)
 
 	if (sumDigits(n) % 3 == 0)
 	{
-		return 1;
+		return 0;
 	}
 	
 	else
 	{
-		return 0;
+		return 1;
 	}
 
 }
