@@ -14,10 +14,10 @@ int *array_range(int min, int max)
 	if (arr != NULL)
 	{
 		for (i = min; i <= max; i++)
-			{
-				arr[j] = i;
-				j++;
-			}
+		{
+			arr[j] = i;
+			j++;
+		}
 		return (arr);
 	}
 	else
