@@ -1,1 +1,1 @@
-preprocessor
+preprocessor and macro
