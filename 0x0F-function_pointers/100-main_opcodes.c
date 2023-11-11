@@ -1,11 +1,12 @@
-#include "variadic_functions.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * temp - prints opcodes of a function
  * @arr: array of integers
  * @n: number of opcodes
  */
-void temp(const int *arr, size_t n)
+void temp(const unsigned char *arr, size_t n)
 {
     size_t i;
 
@@ -21,28 +22,32 @@ void temp(const int *arr, size_t n)
 }
 
 /**
- * main - main functions
+ * main - main function
  * @argc: number of arguments passed
  * @argv: array of pointers to arguments
  *
- * Return: always O
+ * Return: always 0
  */
 int main(int argc, char **argv)
 {
-int n;
+    int n;
 
-if (argc != 2)
-{
-printf("Error\n");
-exit(1);
+    if (argc != 2)
+    {
+        printf("Error\n");
+        exit(1);
+    }
+
+    n = atoi(argv[1]);
+    if (n <= 0)
+    {
+        printf("Error\n");
+        exit(2);
+    }
+
+    // Print the opcodes of the main function
+    temp((const unsigned char *)&main, n);
+
+    return 0;
 }
-n = atoi(argv[1]);
-if (n < 0)
-{
-printf("Error\n");
-exit(2);
-}
-int opcodes[100];
-memcpy(opcodes, &main, n * sizeof(int));
-return (0);
-}
+
