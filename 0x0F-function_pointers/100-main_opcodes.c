@@ -42,6 +42,7 @@ if (n < 0)
 printf("Error\n");
 exit(2);
 }
-temp((char *)&main, n);
+int opcodes[100];
+memcpy(opcodes, &main, n * sizeof(int));
 return (0);
 }
